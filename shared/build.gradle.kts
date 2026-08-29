@@ -43,6 +43,7 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.compose.uiTooling)
+            runtimeOnly(libs.maplibre.compose.runtime.vulkan.android)
         }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
@@ -53,6 +54,8 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.maplibre.compose)
+            implementation(libs.voyager.navigator)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
